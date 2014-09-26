@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "teamtalk", "..\src\teamtalk\teamtalk.vcxproj", "{227620A9-98FE-4160-B08B-074B2FFC2784}"
+	ProjectSection(ProjectDependencies) = postProject
+		{969BDE4B-9261-491E-940C-DD08CC4E84C5} = {969BDE4B-9261-491E-940C-DD08CC4E84C5}
+		{6E182BBC-17D4-4E11-8580-44A546D6ACF0} = {6E182BBC-17D4-4E11-8580-44A546D6ACF0}
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E} = {E106ACD7-4E53-4AEE-942B-D0DD426DB34E}
+		{A29131FE-41A5-4CD5-B6A7-A66A173F912B} = {A29131FE-41A5-4CD5-B6A7-A66A173F912B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "utility", "..\core\utility\utility.vcxproj", "{A29131FE-41A5-4CD5-B6A7-A66A173F912B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TTLogic", "..\core\TTLogic\TTLogic.vcxproj", "{969BDE4B-9261-491E-940C-DD08CC4E84C5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A29131FE-41A5-4CD5-B6A7-A66A173F912B} = {A29131FE-41A5-4CD5-B6A7-A66A173F912B}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sln_define", "sln_define", "{1DDC7C59-C209-486A-A363-5AFAE19DD01F}"
+	ProjectSection(SolutionItems) = preProject
+		..\include\GlobalConfig.h = ..\include\GlobalConfig.h
+		..\include\GlobalDefine.h = ..\include\GlobalDefine.h
+		..\include\GlobalMacros.h = ..\include\GlobalMacros.h
+		..\include\MainVersion.h = ..\include\MainVersion.h
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DuiLib", "..\core\DuiLib\DuiLib.vcxproj", "{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Modules", "..\src\Modules\Modules.vcxproj", "{6E182BBC-17D4-4E11-8580-44A546D6ACF0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{969BDE4B-9261-491E-940C-DD08CC4E84C5} = {969BDE4B-9261-491E-940C-DD08CC4E84C5}
+		{0C1A4D61-C72C-4BBC-8468-34CD700D860C} = {0C1A4D61-C72C-4BBC-8468-34CD700D860C}
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E} = {E106ACD7-4E53-4AEE-942B-D0DD426DB34E}
+		{A29131FE-41A5-4CD5-B6A7-A66A173F912B} = {A29131FE-41A5-4CD5-B6A7-A66A173F912B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GifSmiley", "..\src\GifSmiley\GifSmiley2003.vcxproj", "{5877050B-504E-4DFF-A78C-759C95E0DD06}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "httpclient", "..\3rdParty\src\http\httpclient\httpclient.vcxproj", "{0C1A4D61-C72C-4BBC-8468-34CD700D860C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TTProtect", "..\core\TTProtect\TTProtect.vcxproj", "{BCA40726-25C9-4AB2-BA11-2A6841D73764}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{227620A9-98FE-4160-B08B-074B2FFC2784}.Debug|Win32.ActiveCfg = Debug|Win32
+		{227620A9-98FE-4160-B08B-074B2FFC2784}.Debug|Win32.Build.0 = Debug|Win32
+		{227620A9-98FE-4160-B08B-074B2FFC2784}.Release|Win32.ActiveCfg = Release|Win32
+		{227620A9-98FE-4160-B08B-074B2FFC2784}.Release|Win32.Build.0 = Release|Win32
+		{A29131FE-41A5-4CD5-B6A7-A66A173F912B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A29131FE-41A5-4CD5-B6A7-A66A173F912B}.Debug|Win32.Build.0 = Debug|Win32
+		{A29131FE-41A5-4CD5-B6A7-A66A173F912B}.Release|Win32.ActiveCfg = Release|Win32
+		{A29131FE-41A5-4CD5-B6A7-A66A173F912B}.Release|Win32.Build.0 = Release|Win32
+		{969BDE4B-9261-491E-940C-DD08CC4E84C5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{969BDE4B-9261-491E-940C-DD08CC4E84C5}.Debug|Win32.Build.0 = Debug|Win32
+		{969BDE4B-9261-491E-940C-DD08CC4E84C5}.Release|Win32.ActiveCfg = Release|Win32
+		{969BDE4B-9261-491E-940C-DD08CC4E84C5}.Release|Win32.Build.0 = Release|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Debug|Win32.Build.0 = Debug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Release|Win32.ActiveCfg = Release|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Release|Win32.Build.0 = Release|Win32
+		{6E182BBC-17D4-4E11-8580-44A546D6ACF0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6E182BBC-17D4-4E11-8580-44A546D6ACF0}.Debug|Win32.Build.0 = Debug|Win32
+		{6E182BBC-17D4-4E11-8580-44A546D6ACF0}.Release|Win32.ActiveCfg = Release|Win32
+		{6E182BBC-17D4-4E11-8580-44A546D6ACF0}.Release|Win32.Build.0 = Release|Win32
+		{5877050B-504E-4DFF-A78C-759C95E0DD06}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5877050B-504E-4DFF-A78C-759C95E0DD06}.Debug|Win32.Build.0 = Debug|Win32
+		{5877050B-504E-4DFF-A78C-759C95E0DD06}.Release|Win32.ActiveCfg = Release|Win32
+		{5877050B-504E-4DFF-A78C-759C95E0DD06}.Release|Win32.Build.0 = Release|Win32
+		{0C1A4D61-C72C-4BBC-8468-34CD700D860C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0C1A4D61-C72C-4BBC-8468-34CD700D860C}.Debug|Win32.Build.0 = Debug|Win32
+		{0C1A4D61-C72C-4BBC-8468-34CD700D860C}.Release|Win32.ActiveCfg = Release|Win32
+		{0C1A4D61-C72C-4BBC-8468-34CD700D860C}.Release|Win32.Build.0 = Release|Win32
+		{BCA40726-25C9-4AB2-BA11-2A6841D73764}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BCA40726-25C9-4AB2-BA11-2A6841D73764}.Debug|Win32.Build.0 = Debug|Win32
+		{BCA40726-25C9-4AB2-BA11-2A6841D73764}.Release|Win32.ActiveCfg = Release|Win32
+		{BCA40726-25C9-4AB2-BA11-2A6841D73764}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

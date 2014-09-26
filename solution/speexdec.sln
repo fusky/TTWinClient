@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libogg", "..\3rdParty\src\libogg\libogg_dynamic.vcxproj", "{15CBFEFF-7965-41F5-B4E2-21E8795C9159}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libspeex", "..\3rdParty\src\libspeex\libspeex\libspeex.vcxproj", "{E972C52F-9E85-4D65-B19C-031E511E9DB4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "speexdec", "..\3rdParty\src\libspeex\speexdec\speexdec.vcxproj", "{961B8359-1393-4EF7-B8E0-67B6FE1C6DA8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4} = {E972C52F-9E85-4D65-B19C-031E511E9DB4}
+		{15CBFEFF-7965-41F5-B4E2-21E8795C9159} = {15CBFEFF-7965-41F5-B4E2-21E8795C9159}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "speexenc", "..\3rdParty\src\libspeex\speexenc\speexenc.vcxproj", "{CD6043D1-D5E7-46D0-854F-00BB1BC308FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Debug|Win32.ActiveCfg = Debug|Win32
+		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Debug|Win32.Build.0 = Debug|Win32
+		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Debug|x64.ActiveCfg = Debug|x64
+		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Debug|x64.Build.0 = Debug|x64
+		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Release|Win32.ActiveCfg = Release|Win32
+		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Release|Win32.Build.0 = Release|Win32
+		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Release|x64.ActiveCfg = Release|x64
+		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Release|x64.Build.0 = Release|x64
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Debug|Win32.Build.0 = Debug|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Debug|x64.ActiveCfg = Debug|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Release|Win32.ActiveCfg = Release|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Release|Win32.Build.0 = Release|Win32
+		{E972C52F-9E85-4D65-B19C-031E511E9DB4}.Release|x64.ActiveCfg = Release|Win32
+		{961B8359-1393-4EF7-B8E0-67B6FE1C6DA8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{961B8359-1393-4EF7-B8E0-67B6FE1C6DA8}.Debug|Win32.Build.0 = Debug|Win32
+		{961B8359-1393-4EF7-B8E0-67B6FE1C6DA8}.Debug|x64.ActiveCfg = Debug|Win32
+		{961B8359-1393-4EF7-B8E0-67B6FE1C6DA8}.Release|Win32.ActiveCfg = Release|Win32
+		{961B8359-1393-4EF7-B8E0-67B6FE1C6DA8}.Release|Win32.Build.0 = Release|Win32
+		{961B8359-1393-4EF7-B8E0-67B6FE1C6DA8}.Release|x64.ActiveCfg = Release|Win32
+		{CD6043D1-D5E7-46D0-854F-00BB1BC308FC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CD6043D1-D5E7-46D0-854F-00BB1BC308FC}.Debug|Win32.Build.0 = Debug|Win32
+		{CD6043D1-D5E7-46D0-854F-00BB1BC308FC}.Debug|x64.ActiveCfg = Debug|Win32
+		{CD6043D1-D5E7-46D0-854F-00BB1BC308FC}.Release|Win32.ActiveCfg = Release|Win32
+		{CD6043D1-D5E7-46D0-854F-00BB1BC308FC}.Release|Win32.Build.0 = Release|Win32
+		{CD6043D1-D5E7-46D0-854F-00BB1BC308FC}.Release|x64.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

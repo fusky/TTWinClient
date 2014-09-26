@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <ListContainerElement height="40" name="ListGroupMembersItem" >
+    <HorizontalLayout>
+      <VerticalLayout name="logo_container" width="30" padding="7,5,0,0">
+        <Button name="AvatarInfo"  width="30" height="30" />
+      </VerticalLayout>
+      <Label name="nickname"  padding="10,3,0,0" bordersize="0" textcolor="#FF000000" disabledtextcolor="#FF808080" />
+   </HorizontalLayout>
+  </ListContainerElement>
+</Window>

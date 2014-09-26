@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Project Files">
+      <UniqueIdentifier>{98e5440b-0fc6-4599-873a-88499b09b399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module">
+      <UniqueIdentifier>{63a90460-b5cd-4c3d-8861-3915f7ffa84a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Worker">
+      <UniqueIdentifier>{f89c28e8-03cb-4024-9620-0b3ab5e0ff3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol buffer">
+      <UniqueIdentifier>{10566741-129f-4cbc-8628-2dd2f2c0861b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MKO">
+      <UniqueIdentifier>{34fc6a0a-2410-41db-8b7b-3a726881585b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TcpClient">
+      <UniqueIdentifier>{a6b9cb28-6f5f-44c3-8c10-c88825ca472b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TcpClient\nio">
+      <UniqueIdentifier>{8380cd47-a9d6-46a8-80d8-e0bf3df7afdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDU">
+      <UniqueIdentifier>{257de2e8-55de-4b85-bf94-3b5e99409b06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API">
+      <UniqueIdentifier>{4f99056f-fe86-45f3-bd46-f3be1717cdf0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Project Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TTLogic.cpp">
+      <Filter>Project Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModuleManager.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="LogicOperationManager.cpp">
+      <Filter>Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="LogicEventManager.cpp">
+      <Filter>Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="MKObserver.cpp">
+      <Filter>MKO</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer.cpp">
+      <Filter>MKO</Filter>
+    </ClCompile>
+    <ClCompile Include="TcpClientModule_Impl.cpp">
+      <Filter>TcpClient</Filter>
+    </ClCompile>
+    <ClCompile Include="TcpClientSocket.cpp">
+      <Filter>TcpClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\include\nio\AsyncSocketEx.cpp">
+      <Filter>TcpClient\nio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\include\nio\AsyncSocketExLayer.cpp">
+      <Filter>TcpClient\nio</Filter>
+    </ClCompile>
+    <ClCompile Include="LogicImpl.cpp">
+      <Filter>API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ttcppserver\src\base\ImPduBase.cpp">
+      <Filter>PDU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ttcppserver\src\base\ImPduClient.cpp">
+      <Filter>PDU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ttcppserver\src\base\ImPduFile.cpp">
+      <Filter>PDU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ttcppserver\src\base\ImPduGroup.cpp">
+      <Filter>PDU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ttcppserver\src\base\UtilPdu.cpp">
+      <Filter>PDU</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Project Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Project Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Project Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TTLogic.h">
+      <Filter>Project Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\TTLogic\TTLogicDll.h">
+      <Filter>Project Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\TTLogic\IModule.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\TTLogic\ModuleID.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="ModuleManager.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\TTLogic\IOperation.h">
+      <Filter>Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="LogicOperationManager.h">
+      <Filter>Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\TTLogic\IEvent.h">
+      <Filter>Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="LogicEventManager.h">
+      <Filter>Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="MKObserver.h">
+      <Filter>MKO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\TTLogic\Observer.h">
+      <Filter>MKO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\TTLogic\ITcpClientModule.h">
+      <Filter>TcpClient</Filter>
+    </ClInclude>
+    <ClInclude Include="TcpClientModule_Impl.h">
+      <Filter>TcpClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\include\nio\AsyncSocketEx.h">
+      <Filter>TcpClient\nio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\include\nio\AsyncSocketExLayer.h">
+      <Filter>TcpClient\nio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\TTLogic\TcpClientSocket.h">
+      <Filter>TcpClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\TTLogic\ErrorCode.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\TTLogic\Exception.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\TTLogic\ILogic.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="LogicImpl.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ttcppserver\src\base\ImPduBase.h">
+      <Filter>PDU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ttcppserver\src\base\ImPduClient.h">
+      <Filter>PDU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ttcppserver\src\base\ImPduFile.h">
+      <Filter>PDU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ttcppserver\src\base\ImPduGroup.h">
+      <Filter>PDU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ttcppserver\src\base\ostype.h">
+      <Filter>PDU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ttcppserver\src\base\UtilPdu.h">
+      <Filter>PDU</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TTLogic.def">
+      <Filter>Project Files</Filter>
+    </None>
+    <None Include="res\TTLogic.rc2">
+      <Filter>Project Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TTLogic.rc">
+      <Filter>Project Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
