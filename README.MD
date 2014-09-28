@@ -22,8 +22,13 @@
     * TTProject：目前提供dump收集的保护
     * duilib：windowless ui开源库
 ####TTLogic：
-    
+    * TTLogic：一套支撑win TT逻辑框架,包括operation任务调度、事件的订阅与发布、基于WSAAsyncSelect模型的网络异步I/O TCP/IP长连接、MKO等，详细设计文档正在完善中...
 ####Modules:
-    * 1111
+    * FileTransfer：文件传输
+    * Capture：截屏
+    * Session：个人会话/群会话管理
+    * Login：登陆和断线重连的管理
+    * UserList：组织架构和用户列表信息的管理
+    * Message：会话消息收发的管理
     
     
