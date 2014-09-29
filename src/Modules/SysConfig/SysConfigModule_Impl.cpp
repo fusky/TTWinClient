@@ -217,7 +217,7 @@ BOOL SysConfigModule_Impl::showServerConfigDialog(HWND hParentWnd)
 	BOOL bRet = FALSE;
 	ServerConfigDialog* pServerConfigDialog = new ServerConfigDialog();
 	PTR_FALSE(pServerConfigDialog);
-	pServerConfigDialog->Create(hParentWnd, _T("ServerConfigDialog")
+	pServerConfigDialog->Create(hParentWnd, _T("·þÎñÆ÷ÅäÖÃ")
 		, UI_CLASSSTYLE_DIALOG, WS_EX_STATICEDGE | WS_EX_APPWINDOW, 0, 0, 0, 0);
 	pServerConfigDialog->CenterWindow();
 	bRet = (IDOK == pServerConfigDialog->ShowModal());

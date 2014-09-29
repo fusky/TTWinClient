@@ -124,7 +124,7 @@ Skip:
     Delete "$INSTDIR\gui\skin_base.xml"
     Delete "$INSTDIR\bin\debugConfig.xml"
     
-    ExecWait '"regsvr32.exe"  "$INSTDIR\${INSTALL_BIN}\GifSmiley.dll"'    
+    ExecWait '"regsvr32.exe /s"  "$INSTDIR\${INSTALL_BIN}\GifSmiley.dll"'    
 SectionEnd
 
 Section -AdditionalIcons

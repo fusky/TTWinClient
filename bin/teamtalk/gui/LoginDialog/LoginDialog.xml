@@ -17,7 +17,7 @@
       </HorizontalLayout>
     </HorizontalLayout>
     <VerticalLayout  bkcolor="#FFF7F7F7">
-		<Control  padding="70,40,0,0" bkimage="LoginDialog/card_user.png" maxwidth="152" maxheight="103" />
+		<Control  padding="70,40,0,0" bkimage="LoginDialog/card_user.png" maxwidth="152" maxheight="128" />
         <Text name="tipText" padding="0,10,0,0"  height="26" textpadding="0,0,0,0"  textcolor="#FFF43466" align="center"/>
 		<Edit name="edit_name" padding="20,5,20,0" visible="true" height="46" textpadding="10,3,3,3" bordersize="1" borderround="2,2" bordercolor="FFDADADA" inset="4,4,4,3"  tooltip="请输入用户名" multiline="false" />
 		<Edit name="edit_pwd" padding="20,15,20,0" visible="true" height="46" textpadding="10,3,3,3" bordersize="1" borderround="2,2" bordercolor="FFDADADA" inset="4,4,4,3"  tooltip="请输入密码" multiline="false" password="true"/>		

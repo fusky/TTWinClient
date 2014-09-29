@@ -45,6 +45,8 @@ UTILITY_API void openWebBrowser(CString& url, Int32 nFlag = SW_SHOWMAXIMIZED);
 UTILITY_API CString getMacAddress();
 UTILITY_API void messagePump();
 UTILITY_API CString makeMD5Value(void* pSrc, size_t length);
+UTILITY_API BOOL registerDll(const CString& sFilePath);
+
 
 NAMESPACE_END(util)
 /******************************************************************************/

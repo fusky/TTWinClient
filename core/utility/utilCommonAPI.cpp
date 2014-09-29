@@ -586,5 +586,39 @@ UTILITY_API CString getFormatSizeString(const UInt64 nSize)
 	return strText;
 }
 
+BOOL registerDll(const CString& sFilePath)
+{
+	if (!isFileExist(sFilePath))
+		return FALSE;
+
+	typedef LRESULT(*DllRegisterServerProc)(void);
+	BOOL retVal = FALSE;
+	HINSTANCE hDll = LoadLibrary(sFilePath);
+	while (TRUE)
+	{
+		if (hDll == NULL)
+			break;
+		DllRegisterServerProc DllRegisterServer;
+		DllRegisterServer = (DllRegisterServerProc)GetProcAddress(hDll, "DllRegisterServer");
+		if (DllRegisterServer == NULL)
+			break;
+
+		int temp = DllRegisterServer();
+		if (temp != S_OK)
+			break;
+
+		retVal = TRUE;
+		break;
+	}
+
+	if (retVal == FALSE)
+	{
+		APP_LOG(LOG_ERROR, _T("register dll failed,%s"),sFilePath);
+	}
+
+	FreeLibrary(hDll);
+	return retVal;
+}
+
 NAMESPACE_END(util)
 /******************************************************************************/

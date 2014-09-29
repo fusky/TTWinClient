@@ -259,6 +259,9 @@ void MainDialog::Initilize()
 	module::getUserListModule()->getMyInfo(myInfo);
 	m_pbtnMyFace->SetBkImage(util::stringToCString(myInfo.getAvatarPath()));
 	m_ptxtUname->SetText(myInfo.getRealName());
+
+	CString csPath = util::getAppPath() + _T("\\GifSmiley.dll");
+	util::registerDll(csPath);
 }
 
 void MainDialog::InitWindow()

@@ -10,5 +10,5 @@
 3. 版本更新
 [2014.9.25]版本号2
 
-遇到TeamTalk使用的问题，可以联系QQ：kuaidao@mogujie.com（2477648634），验证消息：TeamTalk开源
+遇到TeamTalk使用的问题，可以联系QQ群：341273218(群名称是teamtalk开源交流群)，验证消息：TeamTalk开源
 祝大家使用愉快 ^^
