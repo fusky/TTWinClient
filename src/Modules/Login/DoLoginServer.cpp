@@ -45,7 +45,6 @@ CImPdu* DoLoginServer::doLogin()
 	//µÇÂ¼·þÎñÆ÷µØÖ·
 	module::TTConfig* pCfg = module::getSysConfigModule()->getSystemConfig();
 	BOOL bRet = m_pLinkSocket->connect(pCfg->loginServIP, pCfg->loginServPort);
-	//BOOL bRet = m_pLinkSocket->connect(_T("122.225.68.125"), 18008);
 	PTR_NULL(bRet);
 
     if(_waitConnectedNotify())
