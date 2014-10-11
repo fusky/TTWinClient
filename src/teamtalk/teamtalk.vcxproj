@@ -58,7 +58,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>.\;$(SolutionDir)..\include;$(SolutionDir)..\include\utility;$(SolutionDir)..\3rdParty\src\json\include\;$(SolutionDir)..\3rdParty\src;$(SolutionDir)..\3rdParty\include;$(SolutionDir)\..\..\;$(SolutionDir)\..\core;$(SolutionDir)\..\..\ttcppserver</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;$(SolutionDir)..\include;$(SolutionDir)..\include\utility;$(SolutionDir)..\3rdParty\src\json\include\;$(SolutionDir)..\3rdParty\src;$(SolutionDir)..\3rdParty\include;$(SolutionDir)\..\..\;$(SolutionDir)\..\core;$(SolutionDir)\..\..\TTServer\cpp</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

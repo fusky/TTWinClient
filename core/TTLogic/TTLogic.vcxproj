@@ -58,7 +58,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;TTLOGIC_DLL;BUILD_PDU;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>.\;$(SolutionDir)..\include;$(SolutionDir)..\3rdParty\include;$(SolutionDir)..\3rdParty\src\;$(SolutionDir)\..\..\ttcppserver</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;$(SolutionDir)..\include;$(SolutionDir)..\3rdParty\include;$(SolutionDir)..\3rdParty\src\;$(SolutionDir)\..\..\TTServer\cpp</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4251;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -120,25 +120,20 @@
     </BuildLog>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\ttcppserver\src\base\ImPduBase.cpp">
+    <ClCompile Include="..\..\..\TTServer\cpp\src\base\ImPduBase.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="..\..\..\ttcppserver\src\base\ImPduClient.cpp">
+    <ClCompile Include="..\..\..\TTServer\cpp\src\base\ImPduClient.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="..\..\..\ttcppserver\src\base\ImPduFile.cpp">
+    <ClCompile Include="..\..\..\TTServer\cpp\src\base\ImPduFile.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="..\..\..\ttcppserver\src\base\ImPduGroup.cpp">
+    <ClCompile Include="..\..\..\TTServer\cpp\src\base\ImPduGroup.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="..\..\..\ttcppserver\src\base\UtilPdu.cpp">
+    <ClCompile Include="..\..\..\TTServer\cpp\src\base\UtilPdu.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="..\..\3rdParty\include\nio\AsyncSocketEx.cpp" />
     <ClCompile Include="..\..\3rdParty\include\nio\AsyncSocketExLayer.cpp" />
@@ -157,12 +152,12 @@
     <ClCompile Include="TTLogic.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\ttcppserver\src\base\ImPduBase.h" />
-    <ClInclude Include="..\..\..\ttcppserver\src\base\ImPduClient.h" />
-    <ClInclude Include="..\..\..\ttcppserver\src\base\ImPduFile.h" />
-    <ClInclude Include="..\..\..\ttcppserver\src\base\ImPduGroup.h" />
-    <ClInclude Include="..\..\..\ttcppserver\src\base\ostype.h" />
-    <ClInclude Include="..\..\..\ttcppserver\src\base\UtilPdu.h" />
+    <ClInclude Include="..\..\..\TTServer\cpp\src\base\ImPduBase.h" />
+    <ClInclude Include="..\..\..\TTServer\cpp\src\base\ImPduClient.h" />
+    <ClInclude Include="..\..\..\TTServer\cpp\src\base\ImPduFile.h" />
+    <ClInclude Include="..\..\..\TTServer\cpp\src\base\ImPduGroup.h" />
+    <ClInclude Include="..\..\..\TTServer\cpp\src\base\ostype.h" />
+    <ClInclude Include="..\..\..\TTServer\cpp\src\base\UtilPdu.h" />
     <ClInclude Include="..\..\3rdParty\include\nio\AsyncSocketEx.h" />
     <ClInclude Include="..\..\3rdParty\include\nio\AsyncSocketExLayer.h" />
     <ClInclude Include="..\..\include\TTLogic\ErrorCode.h" />

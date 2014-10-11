@@ -58,7 +58,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;MODULE_DLL;JSON_DLL;_CRTDBG_MAP_ALLOC;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>.\;$(SolutionDir)..\include;$(SolutionDir)..\3rdParty\include;$(SolutionDir)..\3rdParty\src\;$(SolutionDir)..\3rdParty\src\cximage\cxImage\;$(SolutionDir)..\3rdParty\src\cximage\cxImage\zlib;$(SolutionDir)..\3rdParty\src\json\include\;$(SolutionDir)\..\..\ttcppserver;$(SolutionDir)\..\core\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;$(SolutionDir)..\include;$(SolutionDir)..\3rdParty\include;$(SolutionDir)..\3rdParty\src\;$(SolutionDir)..\3rdParty\src\cximage\cxImage\;$(SolutionDir)..\3rdParty\src\cximage\cxImage\zlib;$(SolutionDir)..\3rdParty\src\json\include\;$(SolutionDir)\..\..\TTServer\cpp;$(SolutionDir)\..\core\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

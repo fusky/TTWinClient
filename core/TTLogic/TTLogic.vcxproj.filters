@@ -66,19 +66,19 @@
     <ClCompile Include="LogicImpl.cpp">
       <Filter>API</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\ttcppserver\src\base\ImPduBase.cpp">
+    <ClCompile Include="..\..\..\TTServer\cpp\src\base\ImPduBase.cpp">
       <Filter>PDU</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\ttcppserver\src\base\ImPduClient.cpp">
+    <ClCompile Include="..\..\..\TTServer\cpp\src\base\ImPduClient.cpp">
       <Filter>PDU</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\ttcppserver\src\base\ImPduFile.cpp">
+    <ClCompile Include="..\..\..\TTServer\cpp\src\base\ImPduFile.cpp">
       <Filter>PDU</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\ttcppserver\src\base\ImPduGroup.cpp">
+    <ClCompile Include="..\..\..\TTServer\cpp\src\base\ImPduGroup.cpp">
       <Filter>PDU</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\ttcppserver\src\base\UtilPdu.cpp">
+    <ClCompile Include="..\..\..\TTServer\cpp\src\base\UtilPdu.cpp">
       <Filter>PDU</Filter>
     </ClCompile>
   </ItemGroup>
@@ -152,22 +152,22 @@
     <ClInclude Include="LogicImpl.h">
       <Filter>API</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\ttcppserver\src\base\ImPduBase.h">
+    <ClInclude Include="..\..\..\TTServer\cpp\src\base\ImPduBase.h">
       <Filter>PDU</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\ttcppserver\src\base\ImPduClient.h">
+    <ClInclude Include="..\..\..\TTServer\cpp\src\base\ImPduClient.h">
       <Filter>PDU</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\ttcppserver\src\base\ImPduFile.h">
+    <ClInclude Include="..\..\..\TTServer\cpp\src\base\ImPduFile.h">
       <Filter>PDU</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\ttcppserver\src\base\ImPduGroup.h">
+    <ClInclude Include="..\..\..\TTServer\cpp\src\base\ImPduGroup.h">
       <Filter>PDU</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\ttcppserver\src\base\ostype.h">
+    <ClInclude Include="..\..\..\TTServer\cpp\src\base\ostype.h">
       <Filter>PDU</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\ttcppserver\src\base\UtilPdu.h">
+    <ClInclude Include="..\..\..\TTServer\cpp\src\base\UtilPdu.h">
       <Filter>PDU</Filter>
     </ClInclude>
   </ItemGroup>
