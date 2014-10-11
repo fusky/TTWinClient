@@ -8,7 +8,7 @@
 
 # 使用
 * 1 为了使客户端开发人员能够不需要部署服务器直接跑起来调试，在启动之后跳出服务器地址配置窗口如图：![服务器地址配置窗口](http://s7.mogucdn.com/b7/pic/141011/8dxwb_ieygmmjymm3dinlemmytambqgiyde_300x120.jpg_468x468.jpg)输入http://alpha.mogu.io/
-* 2 在登陆窗口输入用户名：小李  密码：123456
+* 2 在登陆窗口输入 用户名：小李或小张  密码都是：123456
 
 # 工程模块框架图
 ![win TT框架图](http://s8.mogucdn.com/b7/pic/140928/nb8ca_ieydonjsge2tmmrzmmytambqgiyde_803x546.jpg)
