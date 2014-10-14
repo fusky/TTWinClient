@@ -20,37 +20,33 @@ see all projects in our [mogutt](https://github.com/mogutt) github account page 
 * the solution file relative path of TTWinClient is .\TTWinClient\solution\
 
 ## How to use
-* By using the setting as follows,![服务器地址配置窗口](http://s7.mogucdn.com/b7/pic/141011/8dxwb_ieygmmjymm3dinlemmytambqgiyde_300x120.jpg_468x468.jpg)input please http://alpha.mogu.io/ the client developer can debug the project without configuring the servers.
-* use below identities to login:
-* **id:** eric
-* **password:** 12345
+* By using the setting as follows,![server address config](http://s7.mogucdn.com/b7/pic/141011/8dxwb_ieygmmjymm3dinlemmytambqgiyde_300x120.jpg_468x468.jpg)input please http://alpha.mogu.io/ the client developer can debug the project without configuring the servers.
+* At the login window,use the account "eric" or "tom" with the same password "12345" to login
 
-* **id:** tom
-* **password:** 12345
-
-# 工程模块框架图
-![win TT框架图](http://s8.mogucdn.com/b7/pic/140928/nb8ca_ieydonjsge2tmmrzmmytambqgiyde_803x546.jpg)
-####介绍
-    win TT项目总共分为四个层次:
-    * 第一层基础类库
-    * 第二层逻辑框架
-    * 第三层业务模块层
-    * 第四层teamtalk项目控制层
-####基础类库：
-    * utility:一些公用的基础函数库，如字符串处理、数据库读写、windows线程库包装等
-    * net:网络处理基础类库，包括httpclient、异步I/O socket的包装
-    * TTProject：目前提供dump收集的保护
-    * duilib：windowless ui开源库
+## The framework of the project
+![win TT Framework](http://s8.mogucdn.com/b7/pic/140928/nb8ca_ieydonjsge2tmmrzmmytambqgiyde_803x546.jpg)
+####Introduction
+    Win TT PRJ divided into four levels:
+    * first layer:basic library
+    * second layer: logical framework
+    * third layer the business module
+    * fourth layer: total teamtalk control module
+####basic library：
+    * utility:some commonly used API such as: string manipulation,database process ,windows thread library wrap and so on
+    * net:commonly used network processing API such as: http client library wrap、asynchronous I/O socket wrap and so on
+    * TTProject：for collecting mini core dump
+    * ![duilib](https://code.google.com/p/duilib/)：a windowless ui open source library
 ####TTLogic：
-    * TTLogic：一套支撑win TT逻辑框架,包括operation任务调度、事件的订阅与发布、基于WSAAsyncSelect模型的网络异步I/O TCP/IP长连接、MKO等，详细设计文档正在完善中...
+    * TTLogic:a basic framework of TTWinClinet,including the operation task scheduling,event subscription and publishing, network based asynchronous I/O TCP/IP WSAAsyncSelect model of long connection, MKO.More detailed design document is perfectting
+
 ####Modules:
-    * FileTransfer：文件传输
-    * Capture：截屏
-    * Session：个人会话/群会话管理
-    * Login：登陆和断线重连的管理
-    * UserList：组织架构和用户列表信息的管理
-    * Message：会话消息收发的管理
+    * FileTransfer：for FileTransfer manage
+    * Capture：for screen captrue manage
+    * Session：for colleagues or groups session manage
+    * Login：for login and network recontent manage
+    * UserList：for colleagues manage
+    * Message：for sending and receiving message manage
 ####TeamTalk
-    * TeamTalk：整个项目工程控制的一些业务
+    * TeamTalk：total teamtalk control module
     
     
