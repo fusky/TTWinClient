@@ -1,5 +1,18 @@
-# 简介
-* TeamTalk是一套开源的企业办公即时通讯软件，作为整套系统的组成部分之一，TTWinClient为TeamTalk 的windows IM客户端，为用户提供收发文本消息，图片，表情等功能。
+# mogujie Open Source IM App  ![Logo](https://avatars2.githubusercontent.com/u/8542441?v=2&s=200)
+
+[mogujie](http://www.mogujie.com) Open Source IM is aiming to provide an another IM solution in your company for colleagues to communicate with each other. 
+
+we've released Win/Mac/Android/iOS  client repositories in github as well as IM server repository.
+
+see all projects in our [mogutt](https://github.com/mogutt) github account page or visit our [official website](http://tt.mogu.io/)(Chinease) for more information
+
+## Windows Client Features
+* list all colleagues in your company as well as detail profiles like (email addr, title, phone No. etc.)
+* support fast search colleague detail profile
+* support communicating through "Text", "Audio", "Image" messages like [whatsapp](http://www.whatsapp.com/) 
+* support creating temporary chat group with multiple people all together
+* support permanent chat group created by administrators
+* support basic functions such as Emotion、Vibrating screen、File transfer and so on
 
 # 编译
 * 开发工具：VS2013
