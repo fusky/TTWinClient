@@ -24,20 +24,25 @@ see all projects in our [mogutt](https://github.com/mogutt) github account page 
 * At the login window,use the account "eric" or "tom" with the same password "12345" to login
 
 ## The framework of the project
-![win TT Framework](http://s8.mogucdn.com/b7/pic/140928/nb8ca_ieydonjsge2tmmrzmmytambqgiyde_803x546.jpg)
+[win TT Framework](http://s8.mogucdn.com/b7/pic/140928/nb8ca_ieydonjsge2tmmrzmmytambqgiyde_803x546.jpg)
 ####Introduction
-    Win TT PRJ divided into four levels:
-    * first layer:basic library
+    TTWinClient project divided into four layers:
+    * first layer:  basic library
     * second layer: logical framework
-    * third layer the business module
+    * third layer   the business module
     * fourth layer: total teamtalk control module
 ####basic library：
     * utility:some commonly used API such as: string manipulation,database process ,windows thread library wrap and so on
     * net:commonly used network processing API such as: http client library wrap、asynchronous I/O socket wrap and so on
     * TTProject：for collecting mini core dump
-    * ![duilib](https://code.google.com/p/duilib/)：a windowless ui open source library
+    * [duilib](https://code.google.com/p/duilib/)：a windowless ui open source library
 ####TTLogic：
-    * TTLogic:a basic framework of TTWinClinet,including the operation task scheduling,event subscription and publishing, network based asynchronous I/O TCP/IP WSAAsyncSelect model of long connection, MKO.More detailed design document is perfectting
+    the framework of TTWinClinet,including as follow:
+    * the operation task scheduling 
+    * event subscription and publishing
+    * asynchronous I/O TCP/IP base on WSAAsyncSelect library of long connection
+    * MKO(module key observer) 
+    More detailed design document is perfectting
 
 ####Modules:
     * FileTransfer：for FileTransfer manage
