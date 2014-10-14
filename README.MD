@@ -24,7 +24,7 @@ see all projects in our [mogutt](https://github.com/mogutt) github account page 
 * At the login window,use the account "eric" or "tom" with the same password "12345" to login
 
 ## The framework of the project
-[win TT Framework](http://s8.mogucdn.com/b7/pic/140928/nb8ca_ieydonjsge2tmmrzmmytambqgiyde_803x546.jpg)
+![](http://s8.mogucdn.com/b7/pic/140928/nb8ca_ieydonjsge2tmmrzmmytambqgiyde_803x546.jpg)
 ####Introduction
     TTWinClient project divided into four layers:
     * first layer:  basic library
@@ -35,7 +35,7 @@ see all projects in our [mogutt](https://github.com/mogutt) github account page 
     * utility:some commonly used API such as: string manipulation,database process ,windows thread library wrap and so on
     * net:commonly used network processing API such as: http client library wrap、asynchronous I/O socket wrap and so on
     * TTProject：for collecting mini core dump
-    * [duilib](https://code.google.com/p/duilib/)：a windowless ui open source library
+    * duilib：a windowless ui open source library
 ####TTLogic：
     the framework of TTWinClinet,including as follow:
     * the operation task scheduling 
