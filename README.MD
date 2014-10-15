@@ -8,7 +8,7 @@ see all projects in our [mogutt](https://github.com/mogutt) github account page 
 
 ## Windows Client Features
 * list all colleagues in your company as well as detail profiles like (email addr, title, phone No. etc.)
-* support fast search for colleague detail profile
+* support fast search for colleague profile
 * support communicating through "Text", "Audio", "Image" messages like [whatsapp](http://www.whatsapp.com/) 
 * support creating temporary chat group with multiple people all together
 * support permanent chat group created by administrators
