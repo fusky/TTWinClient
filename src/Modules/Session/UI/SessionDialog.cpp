@@ -46,6 +46,8 @@ SessionDialog::SessionDialog(const std::string& sId)
 , m_sId(sId)
 , m_pBtnAvatar(nullptr)
 , m_pTxtName(nullptr)
+, m_pBtnMax(nullptr)
+, m_pBtnRestore(nullptr)
 {
 
 }
@@ -132,6 +134,11 @@ void SessionDialog::OnWindowInitialized(TNotifyUI& msg)
 	m_pBtnAvatar = (CButtonUI*)m_PaintManager.FindControl(_T("UserAvatar"));
 	PTR_VOID(m_pBtnAvatar);
 	m_pBtnAvatar->SetBkImage(util::stringToCString(pSessionInfo->getAvatarPath()));
+
+	m_pBtnMax = (CButtonUI*)m_PaintManager.FindControl(_T("maxbtn"));
+	PTR_VOID(m_pBtnMax);
+	m_pBtnRestore = (CButtonUI*)m_PaintManager.FindControl(_T("restorebtn"));
+	PTR_VOID(m_pBtnRestore);
 
 	m_pTxtName = (CTextUI*)m_PaintManager.FindControl(_T("username"));
 	PTR_VOID(m_pTxtName);
@@ -322,6 +329,26 @@ LRESULT SessionDialog::OnSetFocus(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL&
 {
 	m_pSessionLayout->m_pInputRichEdit->SetFocus();//bug，切换的时候，第一次不能获得焦点
 	return __super::OnSetFocus(uMsg, wParam, lParam, bHandled);
+}
+
+LRESULT SessionDialog::OnSysCommand(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled)
+{
+	BOOL bZoomed = ::IsZoomed(m_hWnd);
+	LRESULT lRes = CWindowWnd::HandleMessage(uMsg, wParam, lParam);
+	if (::IsZoomed(m_hWnd) != bZoomed)
+	{
+		if (!bZoomed)
+		{
+			if (m_pBtnMax) m_pBtnMax->SetVisible(false);
+			if (m_pBtnRestore) m_pBtnRestore->SetVisible(true);
+		}
+		else
+		{
+			if (m_pBtnMax) m_pBtnMax->SetVisible(true);
+			if (m_pBtnRestore) m_pBtnRestore->SetVisible(false);
+		}
+	}
+	return __super::OnSysCommand(uMsg, wParam, lParam, bHandled);
 }
 
 

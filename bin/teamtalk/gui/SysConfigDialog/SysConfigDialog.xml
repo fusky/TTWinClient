@@ -39,7 +39,7 @@
 				<HorizontalLayout padding="10,15,0,0" height="22" >
 					<Text text="发送消息" width="100" padding="0,2,0,0" textcolor="#FF999999" />
 					<Control width="72"/>
-					<Option text="Ctrl + Enter" name="CtrlEntrtRdo" width="80"  group="SendMsgGroup" />
+					<Option text="Ctrl + Enter" name="CtrlEntrtRdo" width="90"  group="SendMsgGroup" />
 					<Option text="Enter" name="EnterRdo" selected="true" padding="30,0,0,0" width="55" group="SendMsgGroup" />						
 				</HorizontalLayout>		
 				<HorizontalLayout padding="10,15,0,0" height="22" >

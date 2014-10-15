@@ -17,7 +17,7 @@
 			<HorizontalLayout width="68" padding="0,0,0,0">
 				<Button name="minbtn"  width="16" height="16"   normalimage="file='SessionDialog/minimize.png'" hotimage="SessionDialog/minimize_h.png" pushedimage="SessionDialog/_h.png"  />
 				<Button name="maxbtn" width="16" height="16" padding="10,0,0,0"  normalimage="file='SessionDialog/max.png'" hotimage="SessionDialog/max_h.png" pushedimage="SessionDialog/max_h.png"  />
-				<Button name="restorebtn" visible="false"  padding="10,0,0,0" width="16" height="16"  normalimage="file='SessionDialog/max.png'" hotimage="SessionDialog/max_h.png" pushedimage="SessionDialog/max_h.png"  />
+				<Button name="restorebtn" visible="false"  padding="10,0,0,0" width="16" height="16"  normalimage="file='SessionDialog/restore.png'" hotimage="SessionDialog/restore_h.png" pushedimage="SessionDialog/restore_h.png"  />
 				<Button name="closebtn" padding="10,0,0,0" width="16" height="16"   normalimage="file='SessionDialog/close.png'" hotimage="SessionDialog/close_h.png" pushedimage="SessionDialog/close_h.png"  />
 			</HorizontalLayout>	
 		</HorizontalLayout>
@@ -26,7 +26,6 @@
 				<HorizontalLayout bordersize="0" bordercolor="#FF999933" >
 					<WebBrowser name="ie" clsid="{8856F961-340A-11D0-A96B-00C04FD705A2}" delaycreate="false"/>
 				</HorizontalLayout>
-
 				<HorizontalLayout height="30" inset="2,4,2,4">
 					<Button name="emotionbtn" width="24" height="20" tooltip="表情" bkimage="file='SessionDialog/toolbtn.png' source='0,0,15,13' dest='5,5,20,18'" hotimage="file='SessionDialog/btn_hot.png' corner='2,3,2,2'" selectedimage="file='SessionDialog/btn_push.png' corner='2,5,2,2'"  />			
 					<Button name="imagebtn" width="24" height="20" padding="5,0,0,0" tooltip="传图" bkimage="file='SessionDialog/toolbtn.png' source='22,0,37,13' dest='5,5,20,18'" hotimage="file='SessionDialog/btn_hot.png' corner='2,3,2,2'" selectedimage="file='SessionDialog/btn_push.png' corner='2,5,2,2'"  />			

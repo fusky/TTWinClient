@@ -26,6 +26,7 @@ public:
 	void Notify(TNotifyUI& msg);
 	void OnWindowInitialized(TNotifyUI& msg);
 	virtual LRESULT OnSetFocus(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& bHandled);
+	virtual LRESULT OnSysCommand(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled);
 
 	void OnSessionModuleEvent(UInt16 moduleId, UInt32 keyId, MKO_TUPLE_PARAM mkoParam);
 	void OnSysConfigModuleEvent(UInt16 moduleId, UInt32 keyId, MKO_TUPLE_PARAM mkoParam);
@@ -43,6 +44,8 @@ private:
 
 public:
 	CButtonUI*			m_pBtnAvatar;
+	CButtonUI*			m_pBtnMax;
+	CButtonUI*			m_pBtnRestore;
 	CTextUI*			m_pWritingStatus;
 	CTextUI*			m_pTxtName;
 
