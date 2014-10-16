@@ -42,7 +42,9 @@ private:
 	void _updateSearchResultList(IN const std::vector<std::string>& nameList,int IdType);
 private:
 	CButtonUI*	m_btnSearch;
+	CButtonUI*	m_btnCancel;
 	CEditUI*	m_edit;
+	CControlUI*	m_layoutSearchResult;
 	CGroupsTreelistUI*	m_SearchResultList;
 };
 /******************************************************************************/

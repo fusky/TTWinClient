@@ -29,15 +29,17 @@
 		<Control height="1" bkcolor="#FFD1DCE1"/>		
 		<SearchLayout name="SearchLayout" height="27">
 			<HorizontalLayout height="27">
-				<Edit name="editSearch"  visible="true"  height="27" textpadding="10,3,3,3" bordersize="0" borderround="2,2" bordercolor="FFDADADA" inset="4,4,4,3"  tooltip="搜索:好友、讨论组、群" multiline="false" />
+				<Edit name="editSearch"  height="27" textpadding="10,3,3,3" bordersize="0" borderround="2,2" bordercolor="FFDADADA" inset="4,4,4,3"  tooltip="搜索:好友、讨论组、群" multiline="false" />
 				<Button name="searchbtn" showhtml="true" mouse="false" height="27" width="24" text="{i MainDialog/search_btn.png}{/i}" />
+				<Button name="cancelbtn" visible="false" showhtml="true" height="27" width="24" text="{i MainDialog/cancel_btn.png}{/i}" />				
 			</HorizontalLayout>
-			<HorizontalLayout >
+			<VerticalLayout name="searchResultLayout">
+				<Control height="1"  padding="0,2,0,0" bkcolor="#FFD1DCE1"/>	
 				<GroupList header="hidden"  itemshowhtml="true" name="searchResultList" vscrollbar="true" childpadding="2"/>			
-			</HorizontalLayout>
-		</SearchLayout>
+			</VerticalLayout>
+		</SearchLayout>			
 		<VerticalLayout name="MainListLayout" padding="0,2,0,0">
-			<Control height="1" bkcolor="#FFD1DCE1"/>		
+			<Control height="1" bkcolor="#FFD1DCE1"/>	
             <HorizontalLayout name="tabbtns" height="35"  inset="0,0,0,0" bkcolor="#FFF7F7F7">
 				<Option name="RecentlyListbtn" tooltip="最近联系人" width="92" height="35"  selected="true" group="true" normalimage="file=&apos;MainDialog/tab_btn.png&apos; source=&apos;0,0,92,35&apos;" selectedimage="file=&apos;MainDialog/tab_btn.png&apos; source=&apos;0,36,92,71&apos;"/>
                 <Option name="friendbtn" tooltip="组织架构" width="93" height="35"  group="true"  normalimage="file=&apos;MainDialog/tab_btn.png&apos; source=&apos;93,0,186,35&apos;" selectedimage="file=&apos;MainDialog/tab_btn.png&apos; source=&apos;93,36,186,71&apos;" />

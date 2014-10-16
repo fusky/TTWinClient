@@ -18,8 +18,10 @@
 
 SearchLayout::SearchLayout()
 :m_btnSearch(nullptr)
+, m_btnCancel(nullptr)
 , m_edit(nullptr)
 , m_SearchResultList(nullptr)
+, m_layoutSearchResult(nullptr)
 {
 
 }
@@ -48,9 +50,10 @@ void SearchLayout::DoInit()
 	m_pManager->AddNotifier(this);
 
 	m_btnSearch = static_cast<CButtonUI*>(m_pManager->FindSubControlByName(this, _T("searchbtn")));
+	m_btnCancel = static_cast<CButtonUI*>(m_pManager->FindSubControlByName(this, _T("cancelbtn")));
 	m_edit = static_cast<CEditUI*>(m_pManager->FindSubControlByName(this, _T("editSearch")));
 	m_SearchResultList = static_cast<CGroupsTreelistUI*>(m_pManager->FindSubControlByName(this, _T("searchResultList")));
-
+	m_layoutSearchResult = m_pManager->FindSubControlByName(this, _T("searchResultLayout"));
 }
 
 void SearchLayout::Notify(TNotifyUI& msg)
@@ -63,11 +66,16 @@ void SearchLayout::Notify(TNotifyUI& msg)
 			CDuiString inputText = m_edit->GetText();
 			if (inputText.IsEmpty())
 			{
-				SetFixedHeight(30);
-				m_SearchResultList->SetVisible(false);
+				SetFixedHeight(27);
+				m_layoutSearchResult->SetVisible(false);
+				m_btnSearch->SetVisible(true);
+				m_btnCancel->SetVisible(false);
 			}
 			else
 			{
+				m_btnSearch->SetVisible(false);
+				m_btnCancel->SetVisible(true);
+				m_layoutSearchResult->SetVisible(true);
 				module::UserInfoEntityVec userList;
 				module::getUserListModule()->getSearchUserNameListByShortName(inputText.GetData(), userList);
 				_updateSearchResultList(userList,1);
@@ -87,7 +95,11 @@ void SearchLayout::Notify(TNotifyUI& msg)
 	}
 	else if (msg.pSender == m_btnSearch && msg.sType == DUI_MSGTYPE_CLICK)
 	{
-		APP_LOG(LOG_DEBUG, _T("ËÑË÷°´Å¥"));
+	}
+	else if (msg.pSender == m_btnCancel && msg.sType == DUI_MSGTYPE_CLICK)
+	{
+		m_edit->SetText(_T(""));
+		m_pManager->SendNotify(m_edit,DUI_MSGTYPE_TEXTCHANGED,0,0);
 	}
 	else if (msg.sType == DUI_MSGTYPE_ITEMACTIVATE
 		&&m_SearchResultList

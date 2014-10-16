@@ -283,12 +283,12 @@ BOOL MessageModule_Impl::sqlBatchInsertHistoryMsg(IN std::list<MessageEntity>& m
 		std::list<MessageEntity>::iterator iter = msgList.begin();
 		for (; iter != msgList.end(); ++iter)
 		{
+			msg = *iter;
 			if (msg.msgRenderType == MESSAGE_RENDERTYPE_SYSTEMTIPS)
 			{
 				countMsgOffset(msg.sessionId, -1);
 				continue;
 			}
-			msg = *iter;
 			CppSQLite3Statement stmt = m_pHistoryMSGDB->compileStatement(insertHistoryMSGSql.c_str());
 			stmt.bind(1, msg.sessionId.c_str());
 			stmt.bind(2, msg.talkerSid.c_str());
