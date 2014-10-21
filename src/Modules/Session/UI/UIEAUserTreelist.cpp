@@ -132,8 +132,6 @@ Node* CEAUserTreelistUI::AddNode(const EAUserTreeListItemInfo& item, Node* paren
 			nick_name->SetPadding(CRect(2,4,0,0));
 			nick_name->SetFixedWidth(0);
 		}
-			
-
 		nick_name->SetShowHtml(true);
 		nick_name->SetText(html_text);
 	}

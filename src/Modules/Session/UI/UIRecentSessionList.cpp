@@ -151,7 +151,15 @@ Node* CUIRecentSessionList::AddNode(const SessionListItemInfo& item, Node* paren
 		else
 		{
 			MessageEntity& msg = msgList.front();
-			content = util::stringToCString(msg.content);
+			if (MESSAGE_RENDERTYPE_AUDIO == msg.msgRenderType)
+			{
+				content = util::getMultilingual()->getStringViaID(_T("STRID_SESSIONMODULE_RENDERTYPE_AUDIO"));
+			}
+			else
+			{
+				content = util::stringToCString(msg.content);
+				ReceiveMsgManage::getInstance()->parseContent(content, TRUE, 400, FALSE);
+			}
 		}
 		plastMsgUI->SetText(content);
 	}
