@@ -9,6 +9,7 @@
 #include "Modules/IMiscModule.h"
 #include "Modules/IUserListModule.h"
 #include "Modules/IGroupListModule.h"
+#include "Modules/IMessageModule.h"
 #include "utility/utilStrCodeAPI.h"
 #include "utility/Multilingual.h"
 #include "../SessionManager.h"
@@ -134,6 +135,25 @@ Node* CUIRecentSessionList::AddNode(const SessionListItemInfo& item, Node* paren
 		lastContent->SetShowHtml(true);
 		CString strTime = module::getMiscModule()->makeShortTimeDescription(item.Time);//timeData.Format(_T("-%Y%m%d-%H-%M-%S-"));
 		lastContent->SetText(strTime);
+	}
+
+	CLabelUI* plastMsgUI = static_cast<CLabelUI*>(paint_manager_.FindSubControlByName(pListElement, klastmsgControlName));
+	if (plastMsgUI)
+	{
+		std::vector<MessageEntity> msgList;
+		std::string sId = util::cStringToString(CString(item.id));
+		module::getMessageModule()->sqlGetHistoryMsg(sId, 1, msgList);
+		CString content;
+		if (msgList.empty())
+		{
+			content = _T("");
+		}
+		else
+		{
+			MessageEntity& msg = msgList.front();
+			content = util::stringToCString(msg.content);
+		}
+		plastMsgUI->SetText(content);
 	}
 
 	pListElement->SetFixedHeight(kIMListItemNormalHeight);

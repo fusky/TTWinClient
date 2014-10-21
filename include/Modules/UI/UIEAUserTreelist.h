@@ -28,6 +28,7 @@ public:
 	Node* AddNode(const EAUserTreeListItemInfo& item, Node* parent = NULL);
 	BOOL UpdateItemBySId(const std::string& sId);
 	void ClearItemMsgCount(IN const std::string& sId);//清除显示的未读计数
+	void sortByOnlineState();
 };
 /******************************************************************************/
 #endif// UIEAUSERTREELIST_336BA069_7979J_4659_9E6C_0409B5280078_H__

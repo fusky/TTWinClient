@@ -37,7 +37,7 @@ void MainListLayout::OnUserlistModuleEvent(UInt16 moduleId, UInt32 keyId, MKO_TU
 	}
 	else if (module::KEY_USERLIST_UPDATE_RECENTLISTLIST == keyId)
 	{
-		//给所有的用户创建会话元信息
+		//给所有的用户创建会话信息
 		module::UserInfoEntityMap mapUserInfos;
 		module::getUserListModule()->getAllUsersInfo(mapUserInfos);
 		for (auto kv: mapUserInfos)
@@ -54,8 +54,6 @@ void MainListLayout::OnUserlistModuleEvent(UInt16 moduleId, UInt32 keyId, MKO_TU
 			CImPduClientUnreadMsgCntRequest pduFriendMsgCount;//获取个人会话离线消息
 			logic::getTcpClientModule()->sendPacket(&pduFriendMsgCount);
 		});
-		
-		//module::getFileTransferModule()->showFileTransferDialog();
 
 		//获取离线文件
 		logic::GetLogic()->pushBackOperationWithLambda(
@@ -64,13 +62,15 @@ void MainListLayout::OnUserlistModuleEvent(UInt16 moduleId, UInt32 keyId, MKO_TU
 			CImPduClientFileHasOfflineReq pduOfflineFileReq;//获取个人会话离线文件
 			logic::getTcpClientModule()->sendPacket(&pduOfflineFileReq);
 		});
-
-
 	}
 	else if (module::KEY_USERLIST_UPDATE_NEWUSESADDED == keyId)
 	{
 		//TODO:新的用户，或者一堆用户更新
 	}
+	//else if (module::KEY_USERLIST_USERLINESTATE == keyId)
+	//{
+	//	m_EAuserTreelist->sortByOnlineState();
+	//}
 }
 
 void MainListLayout::OnGrouplistModuleEvent(UInt16 moduleId, UInt32 keyId, MKO_TUPLE_PARAM mkoParam)
@@ -134,7 +134,6 @@ void MainListLayout::OnSessionModuleEvent(UInt16 moduleId, UInt32 keyId, MKO_TUP
 		{
 			APP_LOG(LOG_DEBUG, _T("MainListLayout::OnSessionModuleEvent-click myself!"));
 		}
-
 	}
 	else if (module::KEY_SESSION_SENDMSG_TOOFAST == keyId)
 	{

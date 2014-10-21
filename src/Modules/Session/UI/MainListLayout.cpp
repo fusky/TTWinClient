@@ -224,7 +224,7 @@ void MainListLayout::_AddRecentUserListToUI()
 			item.id = util::stringToCString(userInfo.sId);
 			item.avatarPath = util::stringToCString(userInfo.getAvatarPath());
 			item.nickName = userInfo.getRealName();
-			item.description = _T("最近一条的信息");
+			item.description = _T("最近一条的信息为空");	
 			item.Time = userInfo.updated;
 			m_UIRecentConnectedList->AddNode(item, NULL);
 		}

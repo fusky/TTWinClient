@@ -6,6 +6,7 @@
 
 #include "stdafx.h"
 #include "Modules/UI/UIEAUserTreelist.h"
+#include "Modules/IUserListModule.h"
 #include "../SessionManager.h"
 #include "../../Message/ReceiveMsgManage.h"
 #include "utility/Multilingual.h"
@@ -282,5 +283,42 @@ void CEAUserTreelistUI::ClearItemMsgCount(IN const std::string& sId)
 	Unreadcnt_button->SetText(_T(""));
 	Unreadcnt_button->SetVisible(false);
 }
+int CALLBACK IMEAListItemCompareFunc(UINT_PTR pa, UINT_PTR pb, UINT_PTR pUser)
+{
+	CListContainerElementUI* pListElement1 = (CListContainerElementUI*)pa;
+	CListContainerElementUI* pListElement2 = (CListContainerElementUI*)pb;
+	Node* node1 = (Node*)pListElement1->GetTag();
+	Node* node2 = (Node*)pListElement2->GetTag();
 
+	//获取会话的服务器时间
+
+	CString s1 = node1->data().sId;
+	CString s2 = node2->data().sId;
+	if (s1.IsEmpty() || s2.IsEmpty())
+	{
+		return 0;
+	}
+	std::string sid1 = util::cStringToString(s1);
+	std::string sid2 = util::cStringToString(s2);
+
+	module::UserInfoEntity userInfo1;
+	module::UserInfoEntity userInfo2;
+	if (!module::getUserListModule()->getUserInfoBySId(sid1, userInfo1)
+		|| !module::getUserListModule()->getUserInfoBySId(sid2, userInfo2))
+	{
+		return 0;
+	}
+
+	if (userInfo1.onlineState == userInfo2.onlineState)
+	{
+		return 0;
+	}
+
+	int  nRes = userInfo1.onlineState > userInfo2.onlineState ? -1 : 1;
+	return nRes;
+}
+void CEAUserTreelistUI::sortByOnlineState()
+{
+	SortItems(IMEAListItemCompareFunc, 0);
+}
 /******************************************************************************/
