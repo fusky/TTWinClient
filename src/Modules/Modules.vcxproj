@@ -529,6 +529,7 @@
     <ClCompile Include="Session\UI\UIIMList.cpp" />
     <ClCompile Include="Session\UI\UIIMListCommonDefine.cpp" />
     <ClCompile Include="Session\UI\UIRecentSessionList.cpp" />
+    <ClCompile Include="Session\UI\UserDetailInfoDialog.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -601,6 +602,7 @@
     <ClInclude Include="..\..\include\Modules\UI\UIIMList.h" />
     <ClInclude Include="..\..\include\Modules\UI\UIIMListCommonDefine.h" />
     <ClInclude Include="..\..\include\Modules\UI\UIRecentSessionList.h" />
+    <ClInclude Include="..\..\include\Modules\UI\UserDetailInfoDialog.h" />
     <ClInclude Include="Capture\CaptureModule_Impl.h" />
     <ClInclude Include="Database\DatabaseModule_Impl.h" />
     <ClInclude Include="Emotion\EmotionButton.h" />

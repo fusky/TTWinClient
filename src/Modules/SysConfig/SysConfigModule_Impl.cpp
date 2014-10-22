@@ -203,8 +203,9 @@ void SysConfigModule_Impl::showSysConfigDialog(HWND hParentWnd)
 	m_bSysConfigDialogFlag = TRUE;
 	SysConfigDialog* pSysConfigDialog = new SysConfigDialog();
 	pSysConfigDialog->Create(hParentWnd, _T("SysConfigDialog")
-		, UI_WNDSTYLE_FRAME | WS_THICKFRAME, WS_EX_TOOLWINDOW | WS_EX_TOPMOST | WS_EX_STATICEDGE, 0, 0, 0, 0);
+		, UI_CLASSSTYLE_DIALOG, WS_EX_STATICEDGE | WS_EX_APPWINDOW, 0, 0, 0, 0);
 	pSysConfigDialog->CenterWindow();
+	pSysConfigDialog->ShowWindow(true);
 }
 
 void SysConfigModule_Impl::SetSysConfigDialogFlag(BOOL bIsExist)

@@ -16,7 +16,7 @@
         <Button name="closebtn" tooltip="关闭" padding="10,0,0,0" height="16" width="16" normalimage="MainDialog/close.png" hotimage="MainDialog/close_h.png" pushedimage="MainDialog/close_h.png"/>
       </HorizontalLayout>
    </HorizontalLayout>
-    <VerticalLayout  bkcolor="#FFFCFCFC">
+    <VerticalLayout  bkcolor="#FFF7F7F7">
 		<HorizontalLayout name="UserInfoLayout" height="70" padding="5,0,0,0"  bkcolor="#FFF7F7F7">
             <Button name="myfacebtn" width="60" height="60" padding="0,0,0,3" bkimage="file=&apos;MainDialog/Face.png&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
 		    <VerticalLayout padding="10,12,0,0">

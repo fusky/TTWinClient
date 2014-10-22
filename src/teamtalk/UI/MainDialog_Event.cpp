@@ -35,7 +35,8 @@ void MainDialog::OnClick(TNotifyUI& msg)
 	}
 	else if (msg.pSender == m_pbtnMyFace)
 	{
-		//展示个人信息：部门，号码
+		//show the detail of myself.
+		logic::GetLogic()->asynNotifyObserver(module::KEY_SYSCONFIG_SHOW_USERDETAILDIALOG,module::getSysConfigModule()->userID());	//通知改动
 	}
 	else if (msg.pSender == m_pbtnClose
 		|| msg.pSender == m_pbtnMinMize)

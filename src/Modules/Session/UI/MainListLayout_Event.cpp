@@ -15,7 +15,7 @@
 #include "Modules/UI/UIGroupsTreelist.h"
 #include "Modules/UI/UIRecentSessionList.h"
 #include "Modules/UI/SessionDialog.h"
-
+#include "Modules/UI/UserDetailInfoDialog.h"
 #include "utility/Multilingual.h"
 #include "utility/utilStrCodeAPI.h"
 #include "TTLogic/ITcpClientModule.h"
@@ -236,7 +236,18 @@ void MainListLayout::OnSysConfigModuleEvent(UInt16 moduleId, UInt32 keyId, MKO_T
 		else
 			::SetWindowPos(m_pManager->GetPaintWindow(), HWND_NOTOPMOST, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE);
 	}
-
+	else if (module::KEY_SYSCONFIG_SHOW_USERDETAILDIALOG == keyId)
+	{
+		std::string& sId = std::get<MKO_STRING>(mkoParam);
+		UserDetailInfoDialog* pFloatWnd = new UserDetailInfoDialog(sId);
+		if (pFloatWnd == NULL) return;
+		pFloatWnd->Create(m_pManager->GetPaintWindow(), _T("ÏêÏ¸ÐÅÏ¢")
+			,UI_CLASSSTYLE_DIALOG, WS_EX_STATICEDGE | WS_EX_APPWINDOW
+			//, UI_WNDSTYLE_FRAME | WS_THICKFRAME, WS_EX_TOOLWINDOW | WS_EX_TOPMOST | WS_EX_STATICEDGE
+			, 0, 0, 0, 0);
+		pFloatWnd->CenterWindow();
+		pFloatWnd->ShowWindow(true);
+	}
 }
 
 void MainListLayout::_creatSessionDialog(IN UIIMList* pList, IN CControlUI* pMsgSender)

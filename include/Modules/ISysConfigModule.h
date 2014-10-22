@@ -45,6 +45,8 @@ struct TTConfigNeedCache
 enum
 {
 	KEY_SYSCONFIG_UPDATED = MODULE_ID_SYSCONFIG << 16 | 1,      //个人设置更新
+	KEY_SYSCONFIG_SHOW_USERDETAILDIALOG = MODULE_ID_SYSCONFIG << 16 | 2,      //展示用户详细信息窗口
+
 };
 
 struct TTConfig : public TTConfigNeedCache

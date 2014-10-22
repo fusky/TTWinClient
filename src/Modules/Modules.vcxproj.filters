@@ -516,6 +516,9 @@
     <ClCompile Include="Login\GetServConfigHttpOperation.cpp">
       <Filter>Login</Filter>
     </ClCompile>
+    <ClCompile Include="Session\UI\UserDetailInfoDialog.cpp">
+      <Filter>Session\UI\MainList</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Modules.h">
@@ -829,6 +832,9 @@
     </ClInclude>
     <ClInclude Include="Login\GetServConfigHttpOperation.h">
       <Filter>Login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Modules\UI\UserDetailInfoDialog.h">
+      <Filter>Session\UI\MainList</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
