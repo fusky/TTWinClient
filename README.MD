@@ -22,7 +22,7 @@ see all projects in our [mogutt](https://github.com/mogutt) github account page 
 ## How to use
 * By using the setting as follows,please input "http://alpha.mogu.io/" ,so the contributor can debug the project without configuring the servers.
   ![server address config](http://s7.mogucdn.com/b7/pic/141011/8dxwb_ieygmmjymm3dinlemmytambqgiyde_300x120.jpg_468x468.jpg)
-* At the login window,use the account "eric" or "tom" with the same password "12345" to login
+* At the login window,use the account "eric" or "tom" with the same password "123456" to login
 
 ## The framework of the project
 ![](http://s8.mogucdn.com/b7/pic/140928/nb8ca_ieydonjsge2tmmrzmmytambqgiyde_803x546.jpg)
